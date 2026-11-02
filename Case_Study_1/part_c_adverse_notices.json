@@ -1,0 +1,92 @@
+[
+  {
+    "applicant_id": 137772,
+    "decision": "DENIED",
+    "top_factors": [
+      {
+        "rank": 1,
+        "factor": "External credit score 1",
+        "feature_name": "EXT_SOURCE_1",
+        "value": 0.090210273046589,
+        "impact": "Increases default risk",
+        "shap_value": 0.6744197010993958
+      },
+      {
+        "rank": 2,
+        "factor": "External credit score 2",
+        "feature_name": "EXT_SOURCE_2",
+        "value": 0.33159505452401,
+        "impact": "Increases default risk",
+        "shap_value": 0.3215615451335907
+      },
+      {
+        "rank": 3,
+        "factor": "AMT_GOODS_PRICE",
+        "feature_name": "AMT_GOODS_PRICE",
+        "value": 202500.0,
+        "impact": "Increases default risk",
+        "shap_value": 0.15122148394584656
+      }
+    ]
+  },
+  {
+    "applicant_id": 421915,
+    "decision": "DENIED",
+    "top_factors": [
+      {
+        "rank": 1,
+        "factor": "External credit score 2",
+        "feature_name": "EXT_SOURCE_2",
+        "value": 0.0727877010930197,
+        "impact": "Increases default risk",
+        "shap_value": 0.8605364561080933
+      },
+      {
+        "rank": 2,
+        "factor": "External credit score 3",
+        "feature_name": "EXT_SOURCE_3",
+        "value": 0.2471909382666521,
+        "impact": "Increases default risk",
+        "shap_value": 0.5570076704025269
+      },
+      {
+        "rank": 3,
+        "factor": "DAYS_BIRTH",
+        "feature_name": "DAYS_BIRTH",
+        "value": -13799,
+        "impact": "Increases default risk",
+        "shap_value": 0.11641056090593338
+      }
+    ]
+  },
+  {
+    "applicant_id": 341037,
+    "decision": "DENIED",
+    "top_factors": [
+      {
+        "rank": 1,
+        "factor": "External credit score 2",
+        "feature_name": "EXT_SOURCE_2",
+        "value": 0.3585684988353451,
+        "impact": "Increases default risk",
+        "shap_value": 0.22325892746448517
+      },
+      {
+        "rank": 2,
+        "factor": "Gender",
+        "feature_name": "CODE_GENDER",
+        "value": 1,
+        "impact": "Increases default risk",
+        "shap_value": 0.18955935537815094
+      },
+      {
+        "rank": 3,
+        "factor": "AMT_GOODS_PRICE",
+        "feature_name": "AMT_GOODS_PRICE",
+        "value": 364500.0,
+        "impact": "Increases default risk",
+        "shap_value": 0.17990942299365997
+      }
+    ]
+  }
+]

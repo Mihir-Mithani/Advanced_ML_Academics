@@ -1,0 +1,256 @@
+[
+  {
+    "applicant_id": 137772,
+    "original_prob": 0.6163599491119385,
+    "actual_default": 0,
+    "best_modification": {
+      "feature": "EXT_SOURCE_2",
+      "original_value": 0.33159505452401,
+      "modified_value": 0.6,
+      "change_pct": 80.94359123095892,
+      "original_prob": 0.6163599491119385,
+      "new_prob": 0.4598316252231598,
+      "flip": true
+    },
+    "all_modifications": [
+      {
+        "feature": "EXT_SOURCE_1",
+        "original_value": 0.090210273046589,
+        "modified_value": 0.6,
+        "change_pct": 565.1127191358024,
+        "original_prob": 0.6163599491119385,
+        "new_prob": 0.2706946134567261,
+        "flip": true
+      },
+      {
+        "feature": "EXT_SOURCE_2",
+        "original_value": 0.33159505452401,
+        "modified_value": 0.6,
+        "change_pct": 80.94359123095892,
+        "original_prob": 0.6163599491119385,
+        "new_prob": 0.4598316252231598,
+        "flip": true
+      }
+    ]
+  },
+  {
+    "applicant_id": 421915,
+    "original_prob": 0.6207993030548096,
+    "actual_default": 0,
+    "best_modification": {
+      "feature": "EXT_SOURCE_3",
+      "original_value": 0.2471909382666521,
+      "modified_value": 0.6,
+      "change_pct": 142.727344378928,
+      "original_prob": 0.6207993030548096,
+      "new_prob": 0.3428339958190918,
+      "flip": true
+    },
+    "all_modifications": [
+      {
+        "feature": "EXT_SOURCE_2",
+        "original_value": 0.0727877010930197,
+        "modified_value": 0.6,
+        "change_pct": 724.3150848152554,
+        "original_prob": 0.6207993030548096,
+        "new_prob": 0.3396053910255432,
+        "flip": true
+      },
+      {
+        "feature": "EXT_SOURCE_3",
+        "original_value": 0.2471909382666521,
+        "modified_value": 0.6,
+        "change_pct": 142.727344378928,
+        "original_prob": 0.6207993030548096,
+        "new_prob": 0.3428339958190918,
+        "flip": true
+      }
+    ]
+  },
+  {
+    "applicant_id": 341037,
+    "original_prob": 0.5078836679458618,
+    "actual_default": 0,
+    "best_modification": {
+      "feature": "AMT_CREDIT",
+      "original_value": 364500.0,
+      "modified_value": 291600.0,
+      "change_pct": -19.999999999999996,
+      "original_prob": 0.5078836679458618,
+      "new_prob": 0.4978722631931305,
+      "flip": true
+    },
+    "all_modifications": [
+      {
+        "feature": "AMT_CREDIT",
+        "original_value": 364500.0,
+        "modified_value": 291600.0,
+        "change_pct": -19.999999999999996,
+        "original_prob": 0.5078836679458618,
+        "new_prob": 0.4978722631931305,
+        "flip": true
+      },
+      {
+        "feature": "EXT_SOURCE_2",
+        "original_value": 0.3585684988353451,
+        "modified_value": 0.6,
+        "change_pct": 67.33204449047835,
+        "original_prob": 0.5078836679458618,
+        "new_prob": 0.39151906967163086,
+        "flip": true
+      }
+    ]
+  },
+  {
+    "applicant_id": 380584,
+    "original_prob": 0.6200117468833923,
+    "actual_default": 0,
+    "best_modification": {
+      "feature": "EXT_SOURCE_2",
+      "original_value": 0.1712835504024417,
+      "modified_value": 0.6,
+      "change_pct": 250.29633528162014,
+      "original_prob": 0.6200117468833923,
+      "new_prob": 0.46423009037971497,
+      "flip": true
+    },
+    "all_modifications": [
+      {
+        "feature": "EXT_SOURCE_2",
+        "original_value": 0.1712835504024417,
+        "modified_value": 0.6,
+        "change_pct": 250.29633528162014,
+        "original_prob": 0.6200117468833923,
+        "new_prob": 0.46423009037971497,
+        "flip": true
+      }
+    ]
+  },
+  {
+    "applicant_id": 188062,
+    "original_prob": 0.5050378441810608,
+    "actual_default": 0,
+    "best_modification": {
+      "feature": "AMT_CREDIT",
+      "original_value": 246357.0,
+      "modified_value": 197085.6,
+      "change_pct": -19.999999999999996,
+      "original_prob": 0.5050378441810608,
+      "new_prob": 0.4925418794155121,
+      "flip": true
+    },
+    "all_modifications": [
+      {
+        "feature": "AMT_CREDIT",
+        "original_value": 246357.0,
+        "modified_value": 197085.6,
+        "change_pct": -19.999999999999996,
+        "original_prob": 0.5050378441810608,
+        "new_prob": 0.4925418794155121,
+        "flip": true
+      },
+      {
+        "feature": "EXT_SOURCE_2",
+        "original_value": 0.087955192883624,
+        "modified_value": 0.6,
+        "change_pct": 582.1655212488442,
+        "original_prob": 0.5050378441810608,
+        "new_prob": 0.3123490512371063,
+        "flip": true
+      }
+    ]
+  },
+  {
+    "applicant_id": 316773,
+    "original_prob": 0.6582220196723938,
+    "actual_default": 0,
+    "best_modification": {
+      "feature": "EXT_SOURCE_2",
+      "original_value": 0.4701934839037656,
+      "modified_value": 0.8,
+      "change_pct": 70.14272366303909,
+      "original_prob": 0.6582220196723938,
+      "new_prob": 0.4118291735649109,
+      "flip": true
+    },
+    "all_modifications": [
+      {
+        "feature": "EXT_SOURCE_2",
+        "original_value": 0.4701934839037656,
+        "modified_value": 0.8,
+        "change_pct": 70.14272366303909,
+        "original_prob": 0.6582220196723938,
+        "new_prob": 0.4118291735649109,
+        "flip": true
+      }
+    ]
+  },
+  {
+    "applicant_id": 368768,
+    "original_prob": 0.5442318916320801,
+    "actual_default": 0,
+    "best_modification": {
+      "feature": "EXT_SOURCE_2",
+      "original_value": 0.5280394766196035,
+      "modified_value": 0.7,
+      "change_pct": 32.56584611462219,
+      "original_prob": 0.5442318916320801,
+      "new_prob": 0.4164273738861084,
+      "flip": true
+    },
+    "all_modifications": [
+      {
+        "feature": "EXT_SOURCE_1",
+        "original_value": 0.348596035803392,
+        "modified_value": 0.7,
+        "change_pct": 100.80549636393448,
+        "original_prob": 0.5442318916320801,
+        "new_prob": 0.4565584659576416,
+        "flip": true
+      },
+      {
+        "feature": "EXT_SOURCE_2",
+        "original_value": 0.5280394766196035,
+        "modified_value": 0.7,
+        "change_pct": 32.56584611462219,
+        "original_prob": 0.5442318916320801,
+        "new_prob": 0.4164273738861084,
+        "flip": true
+      },
+      {
+        "feature": "EXT_SOURCE_3",
+        "original_value": 0.3296550543128238,
+        "modified_value": 0.6,
+        "change_pct": 82.0084334064644,
+        "original_prob": 0.5442318916320801,
+        "new_prob": 0.4222618341445923,
+        "flip": true
+      }
+    ]
+  },
+  {
+    "applicant_id": 297296,
+    "original_prob": 0.6635964512825012,
+    "actual_default": 1,
+    "best_modification": {
+      "feature": "EXT_SOURCE_3",
+      "original_value": 0.2115507642052577,
+      "modified_value": 0.6,
+      "change_pct": 183.61986885466806,
+      "original_prob": 0.6635964512825012,
+      "new_prob": 0.3245684802532196,
+      "flip": true
+    },
+    "all_modifications": [
+      {
+        "feature": "EXT_SOURCE_3",
+        "original_value": 0.2115507642052577,
+        "modified_value": 0.6,
+        "change_pct": 183.61986885466806,
+        "original_prob": 0.6635964512825012,
+        "new_prob": 0.3245684802532196,
+        "flip": true
+      }
+    ]
+  }
+]

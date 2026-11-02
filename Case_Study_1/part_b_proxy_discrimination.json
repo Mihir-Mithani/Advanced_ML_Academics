@@ -1,0 +1,365 @@
+{
+  "CODE_GENDER": {
+    "approval_disparity": 0.07991815456795337,
+    "by_group": [
+      {
+        "CODE_GENDER": 0,
+        "approval_rate": 0.9150661965927862,
+        "default_rate": 0.06991938068588052,
+        "count": 40561.0
+      },
+      {
+        "CODE_GENDER": 1,
+        "approval_rate": 0.8351480420248328,
+        "default_rate": 0.10167144221585482,
+        "count": 20940.0
+      }
+    ]
+  },
+  "REGION_RATING_CLIENT": {
+    "approval_disparity": 0.167969183230108,
+    "by_group": [
+      {
+        "REGION_RATING_CLIENT": 1,
+        "approval_rate": 0.9698851288419745,
+        "default_rate": 0.047035082272586154,
+        "count": 6442.0
+      },
+      {
+        "REGION_RATING_CLIENT": 2,
+        "approval_rate": 0.8946045465570084,
+        "default_rate": 0.07924503340462594,
+        "count": 45353.0
+      },
+      {
+        "REGION_RATING_CLIENT": 3,
+        "approval_rate": 0.8019159456118665,
+        "default_rate": 0.1100123609394314,
+        "count": 9708.0
+      }
+    ]
+  },
+  "REGION_RATING_CLIENT_W_CITY": {
+    "approval_disparity": 0.17407779483827268,
+    "by_group": [
+      {
+        "REGION_RATING_CLIENT_W_CITY": 1,
+        "approval_rate": 0.9684395090590298,
+        "default_rate": 0.04734073641145529,
+        "count": 6844.0
+      },
+      {
+        "REGION_RATING_CLIENT_W_CITY": 2,
+        "approval_rate": 0.8937682613056561,
+        "default_rate": 0.07978282674109284,
+        "count": 45862.0
+      },
+      {
+        "REGION_RATING_CLIENT_W_CITY": 3,
+        "approval_rate": 0.7943617142207571,
+        "default_rate": 0.11162896441968853,
+        "count": 8797.0
+      }
+    ]
+  },
+  "NAME_HOUSING_TYPE": {
+    "approval_disparity": 0.1337301587301587,
+    "by_group": [
+      {
+        "NAME_HOUSING_TYPE": 0,
+        "approval_rate": 0.9125,
+        "default_rate": 0.04583333333333333,
+        "count": 240.0
+      },
+      {
+        "NAME_HOUSING_TYPE": 1,
+        "approval_rate": 0.8951087455262916,
+        "default_rate": 0.07803982747545196,
+        "count": 54485.0
+      },
+      {
+        "NAME_HOUSING_TYPE": 2,
+        "approval_rate": 0.8954565505072783,
+        "default_rate": 0.08689898544331716,
+        "count": 2267.0
+      },
+      {
+        "NAME_HOUSING_TYPE": 3,
+        "approval_rate": 0.8980769230769231,
+        "default_rate": 0.06923076923076923,
+        "count": 520.0
+      },
+      {
+        "NAME_HOUSING_TYPE": 4,
+        "approval_rate": 0.7787698412698413,
+        "default_rate": 0.12202380952380952,
+        "count": 1008.0
+      },
+      {
+        "NAME_HOUSING_TYPE": 5,
+        "approval_rate": 0.782769024472008,
+        "default_rate": 0.11599061347636608,
+        "count": 2983.0
+      }
+    ]
+  },
+  "NAME_TYPE_SUITE": {
+    "approval_disparity": 0.13568969784237406,
+    "by_group": [
+      {
+        "NAME_TYPE_SUITE": 0,
+        "approval_rate": 0.936026936026936,
+        "default_rate": 0.07912457912457913,
+        "count": 594.0
+      },
+      {
+        "NAME_TYPE_SUITE": 1,
+        "approval_rate": 0.9009790556450613,
+        "default_rate": 0.07671334737885735,
+        "count": 8069.0
+      },
+      {
+        "NAME_TYPE_SUITE": 3,
+        "approval_rate": 0.8224852071005917,
+        "default_rate": 0.08875739644970414,
+        "count": 169.0
+      },
+      {
+        "NAME_TYPE_SUITE": 4,
+        "approval_rate": 0.8727810650887574,
+        "default_rate": 0.10355029585798817,
+        "count": 338.0
+      },
+      {
+        "NAME_TYPE_SUITE": 5,
+        "approval_rate": 0.8714161598609904,
+        "default_rate": 0.078627280625543,
+        "count": 2302.0
+      },
+      {
+        "NAME_TYPE_SUITE": 6,
+        "approval_rate": 0.8858562291323062,
+        "default_rate": 0.08147954463172291,
+        "count": 49718.0
+      },
+      {
+        "NAME_TYPE_SUITE": 7,
+        "approval_rate": 0.9581749049429658,
+        "default_rate": 0.049429657794676805,
+        "count": 263.0
+      }
+    ]
+  },
+  "OCCUPATION_TYPE": {
+    "approval_disparity": 0.32329211708215555,
+    "by_group": [
+      {
+        "OCCUPATION_TYPE": 0,
+        "approval_rate": 0.9580528223718281,
+        "default_rate": 0.056447436561367165,
+        "count": 1931.0
+      },
+      {
+        "OCCUPATION_TYPE": 1,
+        "approval_rate": 0.8826754385964912,
+        "default_rate": 0.09868421052631579,
+        "count": 912.0
+      },
+      {
+        "OCCUPATION_TYPE": 2,
+        "approval_rate": 0.8354537743850721,
+        "default_rate": 0.10178117048346055,
+        "count": 1179.0
+      },
+      {
+        "OCCUPATION_TYPE": 3,
+        "approval_rate": 0.9244111740003652,
+        "default_rate": 0.05988679934270586,
+        "count": 5477.0
+      },
+      {
+        "OCCUPATION_TYPE": 4,
+        "approval_rate": 0.8062312107133096,
+        "default_rate": 0.11587865537031976,
+        "count": 3659.0
+      },
+      {
+        "OCCUPATION_TYPE": 5,
+        "approval_rate": 0.95,
+        "default_rate": 0.041666666666666664,
+        "count": 120.0
+      },
+      {
+        "OCCUPATION_TYPE": 6,
+        "approval_rate": 0.9230432881504154,
+        "default_rate": 0.05684302579798863,
+        "count": 2287.0
+      },
+      {
+        "OCCUPATION_TYPE": 7,
+        "approval_rate": 0.9019607843137255,
+        "default_rate": 0.0784313725490196,
+        "count": 102.0
+      },
+      {
+        "OCCUPATION_TYPE": 8,
+        "approval_rate": 0.818888990573808,
+        "default_rate": 0.10808090052164364,
+        "count": 10927.0
+      },
+      {
+        "OCCUPATION_TYPE": 9,
+        "approval_rate": 0.6347607052896725,
+        "default_rate": 0.1309823677581864,
+        "count": 397.0
+      },
+      {
+        "OCCUPATION_TYPE": 10,
+        "approval_rate": 0.9396491228070175,
+        "default_rate": 0.061754385964912284,
+        "count": 4275.0
+      },
+      {
+        "OCCUPATION_TYPE": 11,
+        "approval_rate": 0.9165666266506602,
+        "default_rate": 0.055222088835534214,
+        "count": 1666.0
+      },
+      {
+        "OCCUPATION_TYPE": 12,
+        "approval_rate": 0.9068100358422939,
+        "default_rate": 0.06630824372759857,
+        "count": 558.0
+      },
+      {
+        "OCCUPATION_TYPE": 13,
+        "approval_rate": 0.8980891719745223,
+        "default_rate": 0.07006369426751592,
+        "count": 157.0
+      },
+      {
+        "OCCUPATION_TYPE": 14,
+        "approval_rate": 0.8551416256157636,
+        "default_rate": 0.09759852216748768,
+        "count": 6496.0
+      },
+      {
+        "OCCUPATION_TYPE": 15,
+        "approval_rate": 0.9457364341085271,
+        "default_rate": 0.06589147286821706,
+        "count": 258.0
+      },
+      {
+        "OCCUPATION_TYPE": 16,
+        "approval_rate": 0.8176426982950333,
+        "default_rate": 0.10971089696071164,
+        "count": 1349.0
+      },
+      {
+        "OCCUPATION_TYPE": 17,
+        "approval_rate": 0.8211920529801324,
+        "default_rate": 0.10596026490066225,
+        "count": 302.0
+      },
+      {
+        "OCCUPATION_TYPE": 18,
+        "approval_rate": 0.9302863605984268,
+        "default_rate": 0.0659606189913115,
+        "count": 19451.0
+      }
+    ]
+  },
+  "NAME_INCOME_TYPE": {
+    "approval_disparity": 0.12285506963108128,
+    "by_group": [
+      {
+        "NAME_INCOME_TYPE": 1,
+        "approval_rate": 0.9074874511991077,
+        "default_rate": 0.0705521472392638,
+        "count": 14344.0
+      },
+      {
+        "NAME_INCOME_TYPE": 3,
+        "approval_rate": 0.9675810473815462,
+        "default_rate": 0.05495190594941218,
+        "count": 11228.0
+      },
+      {
+        "NAME_INCOME_TYPE": 4,
+        "approval_rate": 0.9340501792114695,
+        "default_rate": 0.053763440860215055,
+        "count": 4185.0
+      },
+      {
+        "NAME_INCOME_TYPE": 7,
+        "approval_rate": 0.8447259777504649,
+        "default_rate": 0.09788534871261542,
+        "count": 31731.0
+      }
+    ]
+  },
+  "NAME_EDUCATION_TYPE": {
+    "approval_disparity": 0.10509087737679657,
+    "by_group": [
+      {
+        "NAME_EDUCATION_TYPE": 1,
+        "approval_rate": 0.955912622003851,
+        "default_rate": 0.05198857977557931,
+        "count": 15061.0
+      },
+      {
+        "NAME_EDUCATION_TYPE": 2,
+        "approval_rate": 0.8812877263581489,
+        "default_rate": 0.0789738430583501,
+        "count": 1988.0
+      },
+      {
+        "NAME_EDUCATION_TYPE": 3,
+        "approval_rate": 0.8508217446270544,
+        "default_rate": 0.10366624525916561,
+        "count": 791.0
+      },
+      {
+        "NAME_EDUCATION_TYPE": 4,
+        "approval_rate": 0.8652774912316897,
+        "default_rate": 0.09036517433463999,
+        "count": 43623.0
+      }
+    ]
+  },
+  "NAME_FAMILY_STATUS": {
+    "approval_disparity": 0.10067094134909194,
+    "by_group": [
+      {
+        "NAME_FAMILY_STATUS": 0,
+        "approval_rate": 0.8507462686567164,
+        "default_rate": 0.09659567331879926,
+        "count": 5963.0
+      },
+      {
+        "NAME_FAMILY_STATUS": 1,
+        "approval_rate": 0.8970442221034141,
+        "default_rate": 0.07663127880037679,
+        "count": 39279.0
+      },
+      {
+        "NAME_FAMILY_STATUS": 2,
+        "approval_rate": 0.8946564885496183,
+        "default_rate": 0.09033078880407125,
+        "count": 3930.0
+      },
+      {
+        "NAME_FAMILY_STATUS": 3,
+        "approval_rate": 0.8478811227297743,
+        "default_rate": 0.09257017061089708,
+        "count": 9085.0
+      },
+      {
+        "NAME_FAMILY_STATUS": 5,
+        "approval_rate": 0.9485520640788663,
+        "default_rate": 0.056377079482439925,
+        "count": 3246.0
+      }
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+numpy
+pandas
+scikit-learn>=1.3
+lightgbm
+shap
+matplotlib
+jupyter
+ipython

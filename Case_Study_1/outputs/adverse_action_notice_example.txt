@@ -1,0 +1,32 @@
+ADVERSE ACTION NOTICE
+[LENDER NAME]
+Date: 02 November 2026
+Application reference: 122754
+
+Decision: your application for credit was NOT APPROVED at this time.
+Amount requested: 486,200   |   Annual income stated: 187,754
+
+PRINCIPAL REASONS (the factors that most increased the assessed risk of non-repayment):
+1. External credit score is below the level we require.
+   Your combined external score is 0.25; applicants we approve have a median of 0.52. It can
+   improve with on-time payments across your credit accounts.
+2. Stated income is low relative to the credit requested.
+   Stated annual income: 187,754.
+3. Short or no recorded length of current employment.
+   Recorded time in current employment: 2.9 years.
+
+WHAT COULD CHANGE THIS OUTCOME:
+Our analysis indicates that spreading repayments over a longer term (instalment about 40%
+lower) would likely have resulted in approval. This is indicative only and not a commitment
+to lend.
+
+YOUR RIGHTS:
+This decision was made with the help of an automated scoring model. You may request a review
+by a member of our credit team and may provide additional information. If information from a
+consumer reporting agency was used, you have the right to obtain a free copy of your report
+within 60 days and to dispute its accuracy: [CRA NAME / ADDRESS / PHONE]. Our decision is
+based only on the credit-related factors listed above. We do not consider sex, age, marital
+status, race, religion, national origin, or receipt of public assistance in deciding whether
+to extend credit. [ECOA / REGULATOR STATEMENT AND ADDRESS - REQUIRES LEGAL REVIEW]
+
+Contact: [PHONE / EMAIL / ADDRESS]

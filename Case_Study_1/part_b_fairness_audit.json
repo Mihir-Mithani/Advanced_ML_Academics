@@ -1,0 +1,215 @@
+{
+  "protected_age_group": {
+    "disparate_impact": {
+      "disparate_impact_ratio": 1.9249858400453117,
+      "selection_rate_privileged": 0.11561938958707361,
+      "selection_rate_unprivileged": 0.22256568778979907,
+      "four_fifths_rule_pass": true,
+      "privileged_group": "36-45",
+      "unprivileged_group": "18-25"
+    },
+    "equalized_odds": {
+      "per_group": {
+        "36-45": {
+          "TPR": 0.37083641746854185,
+          "FPR": 0.09317012826355883,
+          "TP": 501,
+          "FP": 1431,
+          "TN": 13928,
+          "FN": 850
+        },
+        "46-55": {
+          "TPR": 0.3077699293642785,
+          "FPR": 0.06255842941726394,
+          "TP": 305,
+          "FP": 803,
+          "TN": 12033,
+          "FN": 686
+        },
+        "65+": {
+          "TPR": 0.030303030303030304,
+          "FPR": 0.0020470829068577278,
+          "TP": 1,
+          "FP": 2,
+          "TN": 975,
+          "FN": 32
+        },
+        "26-35": {
+          "TPR": 0.48431618569636137,
+          "FPR": 0.14869943261366148,
+          "TP": 772,
+          "FP": 2018,
+          "TN": 11553,
+          "FN": 822
+        },
+        "56-65": {
+          "TPR": 0.14896988906497624,
+          "FPR": 0.02288329519450801,
+          "TP": 94,
+          "FP": 250,
+          "TN": 10675,
+          "FN": 537
+        },
+        "18-25": {
+          "TPR": 0.4876712328767123,
+          "FPR": 0.18885017421602787,
+          "TP": 178,
+          "FP": 542,
+          "TN": 2328,
+          "FN": 187
+        }
+      },
+      "tpr_disparity": 0.45736820257368205,
+      "fpr_disparity": 0.18680309130917014,
+      "equalized_odds_satisfied": false
+    }
+  },
+  "protected_region_rating": {
+    "disparate_impact": {
+      "disparate_impact_ratio": 0.15203076921586642,
+      "selection_rate_privileged": 0.1980840543881335,
+      "selection_rate_unprivileged": 0.03011487115802546,
+      "four_fifths_rule_pass": false,
+      "privileged_group": "High",
+      "unprivileged_group": "Low"
+    },
+    "equalized_odds": {
+      "per_group": {
+        "Medium": {
+          "TPR": 0.3533667223149694,
+          "FPR": 0.08405373691898753,
+          "TP": 1270,
+          "FP": 3510,
+          "TN": 38249,
+          "FN": 2324
+        },
+        "High": {
+          "TPR": 0.50187265917603,
+          "FPR": 0.1605324074074074,
+          "TP": 536,
+          "FP": 1387,
+          "TN": 7253,
+          "FN": 532
+        },
+        "Low": {
+          "TPR": 0.1485148514851485,
+          "FPR": 0.02427105391757615,
+          "TP": 45,
+          "FP": 149,
+          "TN": 5990,
+          "FN": 258
+        }
+      },
+      "tpr_disparity": 0.35335780769088143,
+      "fpr_disparity": 0.13626135348983126,
+      "equalized_odds_satisfied": false
+    }
+  },
+  "protected_income_bracket": {
+    "disparate_impact": {
+      "disparate_impact_ratio": 1.454560226446529,
+      "selection_rate_privileged": 0.08246491593719606,
+      "selection_rate_unprivileged": 0.11995018679950187,
+      "four_fifths_rule_pass": true,
+      "privileged_group": "High",
+      "unprivileged_group": "Low"
+    },
+    "equalized_odds": {
+      "per_group": {
+        "Upper-Middle": {
+          "TPR": 0.3727469358327325,
+          "FPR": 0.09439508317188856,
+          "TP": 517,
+          "FP": 1413,
+          "TN": 13556,
+          "FN": 870
+        },
+        "Low": {
+          "TPR": 0.3848964677222899,
+          "FPR": 0.09634893940215918,
+          "TP": 632,
+          "FP": 1776,
+          "TN": 16657,
+          "FN": 1010
+        },
+        "High": {
+          "TPR": 0.3251231527093596,
+          "FPR": 0.06405560953733463,
+          "TP": 330,
+          "FP": 857,
+          "TN": 12522,
+          "FN": 685
+        },
+        "Lower-Middle": {
+          "TPR": 0.40390879478827363,
+          "FPR": 0.1024905196269345,
+          "TP": 372,
+          "FP": 1000,
+          "TN": 8757,
+          "FN": 549
+        }
+      },
+      "tpr_disparity": 0.07878564207891403,
+      "fpr_disparity": 0.03843491008959987,
+      "equalized_odds_satisfied": true
+    }
+  },
+  "protected_housing": {
+    "disparate_impact": null,
+    "equalized_odds": {
+      "per_group": {
+        "1": {
+          "TPR": 0.3635936030103481,
+          "FPR": 0.08299325144825115,
+          "TP": 1546,
+          "FP": 4169,
+          "TN": 46064,
+          "FN": 2706
+        },
+        "2": {
+          "TPR": 0.2639593908629442,
+          "FPR": 0.0893719806763285,
+          "TP": 52,
+          "FP": 185,
+          "TN": 1885,
+          "FN": 145
+        },
+        "0": {
+          "TPR": 0.45454545454545453,
+          "FPR": 0.06986899563318777,
+          "TP": 5,
+          "FP": 16,
+          "TN": 213,
+          "FN": 6
+        },
+        "5": {
+          "TPR": 0.48554913294797686,
+          "FPR": 0.1820250284414107,
+          "TP": 168,
+          "FP": 480,
+          "TN": 2157,
+          "FN": 178
+        },
+        "4": {
+          "TPR": 0.5609756097560976,
+          "FPR": 0.17401129943502824,
+          "TP": 69,
+          "FP": 154,
+          "TN": 731,
+          "FN": 54
+        },
+        "3": {
+          "TPR": 0.3055555555555556,
+          "FPR": 0.08677685950413223,
+          "TP": 11,
+          "FP": 42,
+          "TN": 442,
+          "FN": 25
+        }
+      },
+      "tpr_disparity": 0.29701621889315344,
+      "fpr_disparity": 0.11215603280822292,
+      "equalized_odds_satisfied": false
+    }
+  }
+}

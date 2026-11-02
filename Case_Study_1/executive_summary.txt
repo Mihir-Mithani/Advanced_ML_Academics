@@ -1,0 +1,50 @@
+
+CASE STUDY 1: ALGORITHMIC FAIRNESS & RISK ASSESSMENT
+============================================================
+
+PART A: BASELINE MODELING RESULTS
+----------------------------------
+Best Model: XGBoost
+ROC-AUC: 0.7612
+PR-AUC: 0.2517
+Business Cost: 20616.00
+Optimal Threshold: 0.6800
+
+All Models Comparison:
+  LogisticRegression: ROC-AUC=0.7466, PR-AUC=0.2267, Cost=21225.00
+  RandomForest: ROC-AUC=0.7401, PR-AUC=0.2168, Cost=21735.00
+  LightGBM: ROC-AUC=0.7609, PR-AUC=0.2519, Cost=20694.00
+  XGBoost: ROC-AUC=0.7612, PR-AUC=0.2517, Cost=20616.00
+
+
+PART B: FAIRNESS AUDIT SUMMARY
+-------------------------------
+  protected_age_group:
+    Disparate Impact Ratio: 1.9250 (PASS - 4/5ths Rule)
+    TPR Disparity: 0.4574, FPR Disparity: 0.1868 (FAIL - Equalized Odds)
+  protected_region_rating:
+    Disparate Impact Ratio: 0.1520 (FAIL - 4/5ths Rule)
+    TPR Disparity: 0.3534, FPR Disparity: 0.1363 (FAIL - Equalized Odds)
+  protected_income_bracket:
+    Disparate Impact Ratio: 1.4546 (PASS - 4/5ths Rule)
+    TPR Disparity: 0.0788, FPR Disparity: 0.0384 (PASS - Equalized Odds)
+
+
+PART C: XAI & COUNTERFACTUAL INSIGHTS
+--------------------------------------
+Top 5 Global Features (SHAP):
+  EXT_SOURCE_3: 0.395999
+  EXT_SOURCE_2: 0.358470
+  EXT_SOURCE_1: 0.165993
+  AMT_GOODS_PRICE: 0.161912
+  AMT_CREDIT: 0.120121
+
+Counterfactual Analysis: 8 rejected applicants analyzed
+Adverse Action Notices generated with top 3 actionable factors
+
+RECOMMENDATIONS:
+1. Deploy XGBoost with threshold 0.6800 for optimal business cost
+2. Monitor fairness metrics monthly
+3. Implement counterfactual explanations for rejected applicants
+4. Regular retraining with fairness constraints
+5. Establish human review process for borderline cases

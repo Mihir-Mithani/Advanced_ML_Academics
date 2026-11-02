@@ -1,0 +1,1616 @@
+{
+  "data": {
+    "source": "synthetic",
+    "n_rows": 30000,
+    "default_rate": 0.0836,
+    "bureau_used": true
+  },
+  "partA_models": [
+    {
+      "model": "LogReg_OHE",
+      "ROC_AUC": 0.70182,
+      "PR_AUC": 0.19471,
+      "threshold": 0.71942,
+      "approval_rate": 0.91967,
+      "default_recall": 0.23752,
+      "precision": 0.24689,
+      "FN": 382,
+      "FP": 363,
+      "cost_per_1000": 378.83333,
+      "saving_vs_approve_all": 0.09261,
+      "saving_vs_reject_all": 0.58665
+    },
+    {
+      "model": "LogReg_TargetEnc",
+      "ROC_AUC": 0.7047,
+      "PR_AUC": 0.19843,
+      "threshold": 0.72621,
+      "approval_rate": 0.92883,
+      "default_recall": 0.22156,
+      "precision": 0.25995,
+      "FN": 390,
+      "FP": 316,
+      "cost_per_1000": 377.66667,
+      "saving_vs_approve_all": 0.09541,
+      "saving_vs_reject_all": 0.58793
+    },
+    {
+      "model": "LGBM_plain",
+      "ROC_AUC": 0.70726,
+      "PR_AUC": 0.18426,
+      "threshold": 0.14021,
+      "approval_rate": 0.87083,
+      "default_recall": 0.34531,
+      "precision": 0.22323,
+      "FN": 328,
+      "FP": 602,
+      "cost_per_1000": 373.66667,
+      "saving_vs_approve_all": 0.10499,
+      "saving_vs_reject_all": 0.59229
+    },
+    {
+      "model": "LGBM_spw",
+      "ROC_AUC": 0.61422,
+      "PR_AUC": 0.12546,
+      "threshold": 0.12002,
+      "approval_rate": 0.91467,
+      "default_recall": 0.21357,
+      "precision": 0.20898,
+      "FN": 394,
+      "FP": 405,
+      "cost_per_1000": 395.83333,
+      "saving_vs_approve_all": 0.0519,
+      "saving_vs_reject_all": 0.5681
+    }
+  ],
+  "partA_trivial_cost_per_1000": {
+    "approve everybody": 417.5,
+    "reject everybody": 916.5
+  },
+  "partB_audit_M0": [
+    {
+      "attribute": "GENDER",
+      "reference_group": "Female",
+      "worst_group": "Male",
+      "min_DIR": 0.9319,
+      "passes_80": true,
+      "max_rejection_RR": 1.5642,
+      "TPR_gap": 0.062,
+      "FPR_gap": 0.0577,
+      "DIR_CI_low": 0.9145,
+      "DIR_CI_high": 0.9483
+    },
+    {
+      "attribute": "AGE_GROUP",
+      "reference_group": "60+",
+      "worst_group": "30-44",
+      "min_DIR": 0.9256,
+      "passes_80": true,
+      "max_rejection_RR": 1.9026,
+      "TPR_gap": 0.0387,
+      "FPR_gap": 0.0715,
+      "DIR_CI_low": 0.8944,
+      "DIR_CI_high": 0.9503
+    },
+    {
+      "attribute": "REGION_TIER",
+      "reference_group": "Region 1 (best)",
+      "worst_group": "Region 3 (worst)",
+      "min_DIR": 0.8881,
+      "passes_80": true,
+      "max_rejection_RR": 2.1701,
+      "TPR_gap": 0.3787,
+      "FPR_gap": 0.0658,
+      "DIR_CI_low": 0.8567,
+      "DIR_CI_high": 0.9212
+    },
+    {
+      "attribute": "INCOME_CATEGORY",
+      "reference_group": "Non-traditional",
+      "worst_group": "Traditional (salaried/business)",
+      "min_DIR": 0.9854,
+      "passes_80": true,
+      "max_rejection_RR": 1.1095,
+      "TPR_gap": 0.05,
+      "FPR_gap": 0.0095,
+      "DIR_CI_low": 0.9596,
+      "DIR_CI_high": 0.9992
+    },
+    {
+      "attribute": "HOUSING_GROUP",
+      "reference_group": "Renting / parents / municipal / office",
+      "worst_group": "Own / standard housing",
+      "min_DIR": 0.9972,
+      "passes_80": true,
+      "max_rejection_RR": 1.019,
+      "TPR_gap": 0.0258,
+      "FPR_gap": 0.008,
+      "DIR_CI_low": 0.9657,
+      "DIR_CI_high": 0.9996
+    }
+  ],
+  "partB_groups_M0": {
+    "GENDER": [
+      {
+        "group": "Female",
+        "n": 3881,
+        "default_rate": 0.0794,
+        "approval_rate": 0.8923,
+        "rejection_rate": 0.1077,
+        "TPR": 0.3214,
+        "FPR": 0.0893,
+        "DIR": 1.0,
+        "rejection_RR": 1.0,
+        "reference": true,
+        "four_fifths_pass": true,
+        "small_group": false
+      },
+      {
+        "group": "Male",
+        "n": 2119,
+        "default_rate": 0.0911,
+        "approval_rate": 0.8315,
+        "rejection_rate": 0.1685,
+        "TPR": 0.3834,
+        "FPR": 0.1469,
+        "DIR": 0.9319,
+        "rejection_RR": 1.5642,
+        "reference": false,
+        "four_fifths_pass": true,
+        "small_group": false
+      }
+    ],
+    "AGE_GROUP": [
+      {
+        "group": "30-44",
+        "n": 2569,
+        "default_rate": 0.074,
+        "approval_rate": 0.8552,
+        "rejection_rate": 0.1448,
+        "TPR": 0.3474,
+        "FPR": 0.1286,
+        "DIR": 0.9256,
+        "rejection_RR": 1.9026,
+        "reference": false,
+        "four_fifths_pass": true,
+        "small_group": false
+      },
+      {
+        "group": "45-59",
+        "n": 2090,
+        "default_rate": 0.0914,
+        "approval_rate": 0.8818,
+        "rejection_rate": 0.1182,
+        "TPR": 0.3455,
+        "FPR": 0.0953,
+        "DIR": 0.9545,
+        "rejection_RR": 1.5528,
+        "reference": false,
+        "four_fifths_pass": true,
+        "small_group": false
+      },
+      {
+        "group": "60+",
+        "n": 473,
+        "default_rate": 0.074,
+        "approval_rate": 0.9239,
+        "rejection_rate": 0.0761,
+        "TPR": 0.3143,
+        "FPR": 0.0571,
+        "DIR": 1.0,
+        "rejection_RR": 1.0,
+        "reference": true,
+        "four_fifths_pass": true,
+        "small_group": false
+      },
+      {
+        "group": "<30",
+        "n": 868,
+        "default_rate": 0.0979,
+        "approval_rate": 0.8618,
+        "rejection_rate": 0.1382,
+        "TPR": 0.3529,
+        "FPR": 0.1149,
+        "DIR": 0.9327,
+        "rejection_RR": 1.8164,
+        "reference": false,
+        "four_fifths_pass": true,
+        "small_group": false
+      }
+    ],
+    "REGION_TIER": [
+      {
+        "group": "Region 1 (best)",
+        "n": 733,
+        "default_rate": 0.0737,
+        "approval_rate": 0.9127,
+        "rejection_rate": 0.0873,
+        "TPR": 0.1481,
+        "FPR": 0.0825,
+        "DIR": 1.0,
+        "rejection_RR": 1.0,
+        "reference": true,
+        "four_fifths_pass": true,
+        "small_group": false
+      },
+      {
+        "group": "Region 2",
+        "n": 4412,
+        "default_rate": 0.0802,
+        "approval_rate": 0.8756,
+        "rejection_rate": 0.1244,
+        "TPR": 0.3277,
+        "FPR": 0.1067,
+        "DIR": 0.9593,
+        "rejection_RR": 1.4252,
+        "reference": false,
+        "four_fifths_pass": true,
+        "small_group": false
+      },
+      {
+        "group": "Region 3 (worst)",
+        "n": 855,
+        "default_rate": 0.1088,
+        "approval_rate": 0.8105,
+        "rejection_rate": 0.1895,
+        "TPR": 0.5269,
+        "FPR": 0.1483,
+        "DIR": 0.8881,
+        "rejection_RR": 2.1701,
+        "reference": false,
+        "four_fifths_pass": true,
+        "small_group": false
+      }
+    ],
+    "INCOME_CATEGORY": [
+      {
+        "group": "Non-traditional",
+        "n": 755,
+        "default_rate": 0.0834,
+        "approval_rate": 0.8821,
+        "rejection_rate": 0.1179,
+        "TPR": 0.3016,
+        "FPR": 0.1012,
+        "DIR": 1.0,
+        "rejection_RR": 1.0,
+        "reference": true,
+        "four_fifths_pass": true,
+        "small_group": false
+      },
+      {
+        "group": "Traditional (salaried/business)",
+        "n": 5245,
+        "default_rate": 0.0835,
+        "approval_rate": 0.8692,
+        "rejection_rate": 0.1308,
+        "TPR": 0.3516,
+        "FPR": 0.1107,
+        "DIR": 0.9854,
+        "rejection_RR": 1.1095,
+        "reference": false,
+        "four_fifths_pass": true,
+        "small_group": false
+      }
+    ],
+    "HOUSING_GROUP": [
+      {
+        "group": "Own / standard housing",
+        "n": 5268,
+        "default_rate": 0.0822,
+        "approval_rate": 0.8705,
+        "rejection_rate": 0.1295,
+        "TPR": 0.3418,
+        "FPR": 0.1104,
+        "DIR": 0.9972,
+        "rejection_RR": 1.019,
+        "reference": false,
+        "four_fifths_pass": true,
+        "small_group": false
+      },
+      {
+        "group": "Renting / parents / municipal / office",
+        "n": 732,
+        "default_rate": 0.0929,
+        "approval_rate": 0.873,
+        "rejection_rate": 0.127,
+        "TPR": 0.3676,
+        "FPR": 0.1024,
+        "DIR": 1.0,
+        "rejection_RR": 1.0,
+        "reference": true,
+        "four_fifths_pass": true,
+        "small_group": false
+      }
+    ]
+  },
+  "partB_proxy_predictability": [
+    {
+      "attribute": "GENDER",
+      "group_predicted": "Male",
+      "group_share": 0.3415,
+      "AUC_from_other_features": 0.8895,
+      "top_leaking_features": "OCCUPATION_TYPE, EXT_SOURCE_3, AMT_INCOME_TOTAL, DAYS_EMPLOYED"
+    },
+    {
+      "attribute": "AGE_GROUP",
+      "group_predicted": "30-44",
+      "group_share": 0.4326,
+      "AUC_from_other_features": 0.6023,
+      "top_leaking_features": "DAYS_EMPLOYED, NAME_INCOME_TYPE, GOODS_CREDIT_PCT, EXT_SOURCE_3"
+    },
+    {
+      "attribute": "REGION_TIER",
+      "group_predicted": "Region 3 (worst)",
+      "group_share": 0.1412,
+      "AUC_from_other_features": 0.98,
+      "top_leaking_features": "REGION_POPULATION_RELATIVE, EXT_SOURCE_3, EXT_SOURCE_2, AMT_INCOME_TOTAL"
+    },
+    {
+      "attribute": "INCOME_CATEGORY",
+      "group_predicted": "Traditional (salaried/business)",
+      "group_share": 0.8779,
+      "AUC_from_other_features": 1.0,
+      "top_leaking_features": "DAYS_EMPLOYED, DAYS_EMPLOYED_PCT, ORGANIZATION_TYPE, AGE_YEARS"
+    },
+    {
+      "attribute": "HOUSING_GROUP",
+      "group_predicted": "Own / standard housing",
+      "group_share": 0.8717,
+      "AUC_from_other_features": 0.564,
+      "top_leaking_features": "DAYS_BIRTH, EXT_SOURCE_3, BUREAU_DAYS_CREDIT_MEAN, DAYS_EMPLOYED"
+    }
+  ],
+  "partB_variants": [
+    {
+      "variant": "M0_baseline",
+      "ROC_AUC": 0.7073,
+      "PR_AUC": 0.1843,
+      "cost_per_1000": 373.6667,
+      "approval_rate": 0.8708,
+      "minDIR_GENDER": 0.9319,
+      "minDIR_AGE_GROUP": 0.9256,
+      "minDIR_REGION_TIER": 0.8881,
+      "minDIR_INCOME_CATEGORY": 0.9854,
+      "minDIR_HOUSING_GROUP": 0.9972,
+      "max_TPR_gap": 0.3787,
+      "max_FPR_gap": 0.0715,
+      "attrs_failing_80": 0
+    },
+    {
+      "variant": "M1_unaware",
+      "ROC_AUC": 0.704,
+      "PR_AUC": 0.1841,
+      "cost_per_1000": 383.5,
+      "approval_rate": 0.905,
+      "minDIR_GENDER": 0.9962,
+      "minDIR_AGE_GROUP": 0.9782,
+      "minDIR_REGION_TIER": 0.9199,
+      "minDIR_INCOME_CATEGORY": 0.9905,
+      "minDIR_HOUSING_GROUP": 0.9991,
+      "max_TPR_gap": 0.3268,
+      "max_FPR_gap": 0.043,
+      "attrs_failing_80": 0
+    },
+    {
+      "variant": "M2_no_proxies",
+      "ROC_AUC": 0.7018,
+      "PR_AUC": 0.1807,
+      "cost_per_1000": 394.0,
+      "approval_rate": 0.9355,
+      "minDIR_GENDER": 0.9997,
+      "minDIR_AGE_GROUP": 0.9835,
+      "minDIR_REGION_TIER": 0.9745,
+      "minDIR_INCOME_CATEGORY": 0.9973,
+      "minDIR_HOUSING_GROUP": 0.9947,
+      "max_TPR_gap": 0.2055,
+      "max_FPR_gap": 0.0205,
+      "attrs_failing_80": 0
+    },
+    {
+      "variant": "M3_reweighed",
+      "ROC_AUC": 0.7053,
+      "PR_AUC": 0.1791,
+      "cost_per_1000": 392.6667,
+      "approval_rate": 0.9148,
+      "minDIR_GENDER": 0.9956,
+      "minDIR_AGE_GROUP": 0.9855,
+      "minDIR_REGION_TIER": 0.9905,
+      "minDIR_INCOME_CATEGORY": 0.9955,
+      "minDIR_HOUSING_GROUP": 0.996,
+      "max_TPR_gap": 0.1685,
+      "max_FPR_gap": 0.016,
+      "attrs_failing_80": 0
+    }
+  ],
+  "partB_redlining_region": [
+    {
+      "group": "Region 1 (best)",
+      "n": 733,
+      "default_rate": 0.0737,
+      "approval_rate": 0.9127,
+      "DIR": 1.0,
+      "TPR": 0.1481,
+      "FPR": 0.0825,
+      "mean_predicted_PD": 0.0757,
+      "calibration_ratio (pred/obs)": 1.0276
+    },
+    {
+      "group": "Region 2",
+      "n": 4412,
+      "default_rate": 0.0802,
+      "approval_rate": 0.8756,
+      "DIR": 0.9593,
+      "TPR": 0.3277,
+      "FPR": 0.1067,
+      "mean_predicted_PD": 0.0807,
+      "calibration_ratio (pred/obs)": 1.0052
+    },
+    {
+      "group": "Region 3 (worst)",
+      "n": 855,
+      "default_rate": 0.1088,
+      "approval_rate": 0.8105,
+      "DIR": 0.8881,
+      "TPR": 0.5269,
+      "FPR": 0.1483,
+      "mean_predicted_PD": 0.0962,
+      "calibration_ratio (pred/obs)": 0.8841
+    }
+  ],
+  "partB_price_of_fairness": [
+    {
+      "attribute": "GENDER",
+      "baseline_minDIR": 0.9319,
+      "baseline_cost_per_1000": 373.6667,
+      "extra_cost_pct_for_DIR>=0.8": 0.0,
+      "extra_cost_pct_for_DIR>=0.9": 0.0,
+      "extra_cost_pct_for_DIR>=0.95": 1.0705
+    },
+    {
+      "attribute": "AGE_GROUP",
+      "baseline_minDIR": 0.9256,
+      "baseline_cost_per_1000": 373.6667,
+      "extra_cost_pct_for_DIR>=0.8": 0.0,
+      "extra_cost_pct_for_DIR>=0.9": 0.0,
+      "extra_cost_pct_for_DIR>=0.95": 0.1784
+    },
+    {
+      "attribute": "REGION_TIER",
+      "baseline_minDIR": 0.8881,
+      "baseline_cost_per_1000": 373.6667,
+      "extra_cost_pct_for_DIR>=0.8": 0.0,
+      "extra_cost_pct_for_DIR>=0.9": 0.7583,
+      "extra_cost_pct_for_DIR>=0.95": 2.0517
+    },
+    {
+      "attribute": "INCOME_CATEGORY",
+      "baseline_minDIR": 0.9854,
+      "baseline_cost_per_1000": 373.6667,
+      "extra_cost_pct_for_DIR>=0.8": 0.0,
+      "extra_cost_pct_for_DIR>=0.9": 0.0,
+      "extra_cost_pct_for_DIR>=0.95": 0.0
+    },
+    {
+      "attribute": "HOUSING_GROUP",
+      "baseline_minDIR": 0.9972,
+      "baseline_cost_per_1000": 373.6667,
+      "extra_cost_pct_for_DIR>=0.8": 0.0,
+      "extra_cost_pct_for_DIR>=0.9": 0.0,
+      "extra_cost_pct_for_DIR>=0.95": 0.0
+    }
+  ],
+  "partB_tradeoff_curves": {
+    "GENDER": [
+      {
+        "alpha": 0.0,
+        "cost_per_1000": 373.6667,
+        "min_DIR": 0.9319,
+        "approval_rate": 0.8708,
+        "TPR_gap": 0.062,
+        "FPR_gap": 0.0577
+      },
+      {
+        "alpha": 0.05,
+        "cost_per_1000": 373.3333,
+        "min_DIR": 0.9361,
+        "approval_rate": 0.8712,
+        "TPR_gap": 0.0536,
+        "FPR_gap": 0.0542
+      },
+      {
+        "alpha": 0.1,
+        "cost_per_1000": 375.1667,
+        "min_DIR": 0.9415,
+        "approval_rate": 0.8713,
+        "TPR_gap": 0.0432,
+        "FPR_gap": 0.0499
+      },
+      {
+        "alpha": 0.15,
+        "cost_per_1000": 375.5,
+        "min_DIR": 0.9444,
+        "approval_rate": 0.871,
+        "TPR_gap": 0.0432,
+        "FPR_gap": 0.047
+      },
+      {
+        "alpha": 0.2,
+        "cost_per_1000": 376.6667,
+        "min_DIR": 0.9479,
+        "approval_rate": 0.8708,
+        "TPR_gap": 0.0212,
+        "FPR_gap": 0.0456
+      },
+      {
+        "alpha": 0.25,
+        "cost_per_1000": 377.6667,
+        "min_DIR": 0.9519,
+        "approval_rate": 0.8718,
+        "TPR_gap": 0.0108,
+        "FPR_gap": 0.0428
+      },
+      {
+        "alpha": 0.3,
+        "cost_per_1000": 378.1667,
+        "min_DIR": 0.9568,
+        "approval_rate": 0.8713,
+        "TPR_gap": 0.0024,
+        "FPR_gap": 0.0387
+      },
+      {
+        "alpha": 0.35,
+        "cost_per_1000": 380.0,
+        "min_DIR": 0.9615,
+        "approval_rate": 0.8705,
+        "TPR_gap": 0.0112,
+        "FPR_gap": 0.0354
+      },
+      {
+        "alpha": 0.4,
+        "cost_per_1000": 380.1667,
+        "min_DIR": 0.9634,
+        "approval_rate": 0.8703,
+        "TPR_gap": 0.0112,
+        "FPR_gap": 0.0336
+      },
+      {
+        "alpha": 0.45,
+        "cost_per_1000": 381.1667,
+        "min_DIR": 0.9683,
+        "approval_rate": 0.8703,
+        "TPR_gap": 0.0164,
+        "FPR_gap": 0.0293
+      },
+      {
+        "alpha": 0.5,
+        "cost_per_1000": 381.8333,
+        "min_DIR": 0.9719,
+        "approval_rate": 0.8697,
+        "TPR_gap": 0.0164,
+        "FPR_gap": 0.0258
+      },
+      {
+        "alpha": 0.55,
+        "cost_per_1000": 381.0,
+        "min_DIR": 0.9762,
+        "approval_rate": 0.8705,
+        "TPR_gap": 0.0164,
+        "FPR_gap": 0.0216
+      },
+      {
+        "alpha": 0.6,
+        "cost_per_1000": 380.3333,
+        "min_DIR": 0.9784,
+        "approval_rate": 0.8712,
+        "TPR_gap": 0.0164,
+        "FPR_gap": 0.0195
+      },
+      {
+        "alpha": 0.65,
+        "cost_per_1000": 379.5,
+        "min_DIR": 0.9827,
+        "approval_rate": 0.872,
+        "TPR_gap": 0.0333,
+        "FPR_gap": 0.0169
+      },
+      {
+        "alpha": 0.7,
+        "cost_per_1000": 378.8333,
+        "min_DIR": 0.9865,
+        "approval_rate": 0.8727,
+        "TPR_gap": 0.0417,
+        "FPR_gap": 0.014
+      },
+      {
+        "alpha": 0.75,
+        "cost_per_1000": 378.0,
+        "min_DIR": 0.9926,
+        "approval_rate": 0.8725,
+        "TPR_gap": 0.0449,
+        "FPR_gap": 0.0084
+      },
+      {
+        "alpha": 0.8,
+        "cost_per_1000": 382.0,
+        "min_DIR": 0.999,
+        "approval_rate": 0.8725,
+        "TPR_gap": 0.0657,
+        "FPR_gap": 0.0025
+      },
+      {
+        "alpha": 0.85,
+        "cost_per_1000": 383.3333,
+        "min_DIR": 0.9935,
+        "approval_rate": 0.8732,
+        "TPR_gap": 0.0845,
+        "FPR_gap": 0.0009
+      },
+      {
+        "alpha": 0.9,
+        "cost_per_1000": 383.6667,
+        "min_DIR": 0.9913,
+        "approval_rate": 0.8728,
+        "TPR_gap": 0.0845,
+        "FPR_gap": 0.0031
+      },
+      {
+        "alpha": 0.95,
+        "cost_per_1000": 384.0,
+        "min_DIR": 0.9881,
+        "approval_rate": 0.8715,
+        "TPR_gap": 0.0877,
+        "FPR_gap": 0.0058
+      },
+      {
+        "alpha": 1.0,
+        "cost_per_1000": 383.0,
+        "min_DIR": 0.9831,
+        "approval_rate": 0.8705,
+        "TPR_gap": 0.0942,
+        "FPR_gap": 0.0101
+      }
+    ],
+    "AGE_GROUP": [
+      {
+        "alpha": 0.0,
+        "cost_per_1000": 373.6667,
+        "min_DIR": 0.9256,
+        "approval_rate": 0.8708,
+        "TPR_gap": 0.0387,
+        "FPR_gap": 0.0715
+      },
+      {
+        "alpha": 0.05,
+        "cost_per_1000": 373.5,
+        "min_DIR": 0.9261,
+        "approval_rate": 0.871,
+        "TPR_gap": 0.0387,
+        "FPR_gap": 0.0711
+      },
+      {
+        "alpha": 0.1,
+        "cost_per_1000": 373.5,
+        "min_DIR": 0.9312,
+        "approval_rate": 0.871,
+        "TPR_gap": 0.0096,
+        "FPR_gap": 0.0684
+      },
+      {
+        "alpha": 0.15,
+        "cost_per_1000": 373.5,
+        "min_DIR": 0.9312,
+        "approval_rate": 0.871,
+        "TPR_gap": 0.0096,
+        "FPR_gap": 0.0684
+      },
+      {
+        "alpha": 0.2,
+        "cost_per_1000": 373.6667,
+        "min_DIR": 0.9333,
+        "approval_rate": 0.8708,
+        "TPR_gap": 0.0096,
+        "FPR_gap": 0.0661
+      },
+      {
+        "alpha": 0.25,
+        "cost_per_1000": 373.8333,
+        "min_DIR": 0.9359,
+        "approval_rate": 0.8707,
+        "TPR_gap": 0.0096,
+        "FPR_gap": 0.0634
+      },
+      {
+        "alpha": 0.3,
+        "cost_per_1000": 374.3333,
+        "min_DIR": 0.9367,
+        "approval_rate": 0.8712,
+        "TPR_gap": 0.0139,
+        "FPR_gap": 0.063
+      },
+      {
+        "alpha": 0.35,
+        "cost_per_1000": 374.0,
+        "min_DIR": 0.9372,
+        "approval_rate": 0.8715,
+        "TPR_gap": 0.0139,
+        "FPR_gap": 0.0626
+      },
+      {
+        "alpha": 0.4,
+        "cost_per_1000": 375.1667,
+        "min_DIR": 0.9398,
+        "approval_rate": 0.8713,
+        "TPR_gap": 0.0192,
+        "FPR_gap": 0.0603
+      },
+      {
+        "alpha": 0.45,
+        "cost_per_1000": 375.8333,
+        "min_DIR": 0.9424,
+        "approval_rate": 0.8717,
+        "TPR_gap": 0.0214,
+        "FPR_gap": 0.0576
+      },
+      {
+        "alpha": 0.5,
+        "cost_per_1000": 375.8333,
+        "min_DIR": 0.9446,
+        "approval_rate": 0.8717,
+        "TPR_gap": 0.0214,
+        "FPR_gap": 0.0553
+      },
+      {
+        "alpha": 0.55,
+        "cost_per_1000": 375.3333,
+        "min_DIR": 0.9459,
+        "approval_rate": 0.8722,
+        "TPR_gap": 0.0214,
+        "FPR_gap": 0.0541
+      },
+      {
+        "alpha": 0.6,
+        "cost_per_1000": 374.3333,
+        "min_DIR": 0.9507,
+        "approval_rate": 0.8722,
+        "TPR_gap": 0.042,
+        "FPR_gap": 0.0514
+      },
+      {
+        "alpha": 0.65,
+        "cost_per_1000": 374.3333,
+        "min_DIR": 0.9556,
+        "approval_rate": 0.8722,
+        "TPR_gap": 0.042,
+        "FPR_gap": 0.0464
+      },
+      {
+        "alpha": 0.7,
+        "cost_per_1000": 374.3333,
+        "min_DIR": 0.9556,
+        "approval_rate": 0.8722,
+        "TPR_gap": 0.042,
+        "FPR_gap": 0.0464
+      },
+      {
+        "alpha": 0.75,
+        "cost_per_1000": 374.6667,
+        "min_DIR": 0.9578,
+        "approval_rate": 0.8718,
+        "TPR_gap": 0.042,
+        "FPR_gap": 0.0441
+      },
+      {
+        "alpha": 0.8,
+        "cost_per_1000": 374.8333,
+        "min_DIR": 0.9601,
+        "approval_rate": 0.8717,
+        "TPR_gap": 0.042,
+        "FPR_gap": 0.0418
+      },
+      {
+        "alpha": 0.85,
+        "cost_per_1000": 374.5,
+        "min_DIR": 0.9605,
+        "approval_rate": 0.872,
+        "TPR_gap": 0.042,
+        "FPR_gap": 0.0414
+      },
+      {
+        "alpha": 0.9,
+        "cost_per_1000": 374.5,
+        "min_DIR": 0.9632,
+        "approval_rate": 0.872,
+        "TPR_gap": 0.042,
+        "FPR_gap": 0.0387
+      },
+      {
+        "alpha": 0.95,
+        "cost_per_1000": 374.5,
+        "min_DIR": 0.9655,
+        "approval_rate": 0.872,
+        "TPR_gap": 0.042,
+        "FPR_gap": 0.0364
+      },
+      {
+        "alpha": 1.0,
+        "cost_per_1000": 375.5,
+        "min_DIR": 0.9748,
+        "approval_rate": 0.871,
+        "TPR_gap": 0.042,
+        "FPR_gap": 0.0273
+      }
+    ],
+    "REGION_TIER": [
+      {
+        "alpha": 0.0,
+        "cost_per_1000": 373.6667,
+        "min_DIR": 0.8881,
+        "approval_rate": 0.8708,
+        "TPR_gap": 0.3787,
+        "FPR_gap": 0.0658
+      },
+      {
+        "alpha": 0.05,
+        "cost_per_1000": 373.8333,
+        "min_DIR": 0.8893,
+        "approval_rate": 0.8707,
+        "TPR_gap": 0.368,
+        "FPR_gap": 0.0658
+      },
+      {
+        "alpha": 0.1,
+        "cost_per_1000": 374.5,
+        "min_DIR": 0.8984,
+        "approval_rate": 0.871,
+        "TPR_gap": 0.3572,
+        "FPR_gap": 0.0576
+      },
+      {
+        "alpha": 0.15,
+        "cost_per_1000": 376.5,
+        "min_DIR": 0.905,
+        "approval_rate": 0.871,
+        "TPR_gap": 0.3357,
+        "FPR_gap": 0.0534
+      },
+      {
+        "alpha": 0.2,
+        "cost_per_1000": 378.0,
+        "min_DIR": 0.9103,
+        "approval_rate": 0.8705,
+        "TPR_gap": 0.325,
+        "FPR_gap": 0.0491
+      },
+      {
+        "alpha": 0.25,
+        "cost_per_1000": 378.6667,
+        "min_DIR": 0.9144,
+        "approval_rate": 0.8698,
+        "TPR_gap": 0.325,
+        "FPR_gap": 0.0449
+      },
+      {
+        "alpha": 0.3,
+        "cost_per_1000": 378.3333,
+        "min_DIR": 0.9236,
+        "approval_rate": 0.8702,
+        "TPR_gap": 0.3142,
+        "FPR_gap": 0.0368
+      },
+      {
+        "alpha": 0.35,
+        "cost_per_1000": 378.3333,
+        "min_DIR": 0.9262,
+        "approval_rate": 0.8702,
+        "TPR_gap": 0.3142,
+        "FPR_gap": 0.0342
+      },
+      {
+        "alpha": 0.4,
+        "cost_per_1000": 380.3333,
+        "min_DIR": 0.9424,
+        "approval_rate": 0.8702,
+        "TPR_gap": 0.2927,
+        "FPR_gap": 0.0203
+      },
+      {
+        "alpha": 0.45,
+        "cost_per_1000": 381.3333,
+        "min_DIR": 0.9589,
+        "approval_rate": 0.8702,
+        "TPR_gap": 0.2712,
+        "FPR_gap": 0.0063
+      },
+      {
+        "alpha": 0.5,
+        "cost_per_1000": 380.1667,
+        "min_DIR": 0.9628,
+        "approval_rate": 0.8703,
+        "TPR_gap": 0.2605,
+        "FPR_gap": 0.0037
+      },
+      {
+        "alpha": 0.55,
+        "cost_per_1000": 381.0,
+        "min_DIR": 0.9681,
+        "approval_rate": 0.8705,
+        "TPR_gap": 0.2497,
+        "FPR_gap": 0.0011
+      },
+      {
+        "alpha": 0.6,
+        "cost_per_1000": 379.6667,
+        "min_DIR": 0.9762,
+        "approval_rate": 0.8708,
+        "TPR_gap": 0.2497,
+        "FPR_gap": 0.0083
+      },
+      {
+        "alpha": 0.65,
+        "cost_per_1000": 380.1667,
+        "min_DIR": 0.9805,
+        "approval_rate": 0.8703,
+        "TPR_gap": 0.2204,
+        "FPR_gap": 0.0097
+      },
+      {
+        "alpha": 0.7,
+        "cost_per_1000": 380.5,
+        "min_DIR": 0.9862,
+        "approval_rate": 0.87,
+        "TPR_gap": 0.2204,
+        "FPR_gap": 0.0153
+      },
+      {
+        "alpha": 0.75,
+        "cost_per_1000": 379.8333,
+        "min_DIR": 0.9881,
+        "approval_rate": 0.8707,
+        "TPR_gap": 0.2097,
+        "FPR_gap": 0.026
+      },
+      {
+        "alpha": 0.8,
+        "cost_per_1000": 380.5,
+        "min_DIR": 0.9857,
+        "approval_rate": 0.87,
+        "TPR_gap": 0.2097,
+        "FPR_gap": 0.0301
+      },
+      {
+        "alpha": 0.85,
+        "cost_per_1000": 380.5,
+        "min_DIR": 0.9818,
+        "approval_rate": 0.87,
+        "TPR_gap": 0.2097,
+        "FPR_gap": 0.0384
+      },
+      {
+        "alpha": 0.9,
+        "cost_per_1000": 383.1667,
+        "min_DIR": 0.9746,
+        "approval_rate": 0.8703,
+        "TPR_gap": 0.1808,
+        "FPR_gap": 0.041
+      },
+      {
+        "alpha": 0.95,
+        "cost_per_1000": 384.6667,
+        "min_DIR": 0.9715,
+        "approval_rate": 0.8698,
+        "TPR_gap": 0.1623,
+        "FPR_gap": 0.044
+      },
+      {
+        "alpha": 1.0,
+        "cost_per_1000": 387.5,
+        "min_DIR": 0.9589,
+        "approval_rate": 0.87,
+        "TPR_gap": 0.1623,
+        "FPR_gap": 0.0564
+      }
+    ],
+    "INCOME_CATEGORY": [
+      {
+        "alpha": 0.0,
+        "cost_per_1000": 373.6667,
+        "min_DIR": 0.9854,
+        "approval_rate": 0.8708,
+        "TPR_gap": 0.05,
+        "FPR_gap": 0.0095
+      },
+      {
+        "alpha": 0.05,
+        "cost_per_1000": 372.8333,
+        "min_DIR": 0.9868,
+        "approval_rate": 0.8707,
+        "TPR_gap": 0.0341,
+        "FPR_gap": 0.0095
+      },
+      {
+        "alpha": 0.1,
+        "cost_per_1000": 373.1667,
+        "min_DIR": 0.9898,
+        "approval_rate": 0.8703,
+        "TPR_gap": 0.0341,
+        "FPR_gap": 0.0066
+      },
+      {
+        "alpha": 0.15,
+        "cost_per_1000": 372.1667,
+        "min_DIR": 0.9915,
+        "approval_rate": 0.8703,
+        "TPR_gap": 0.0183,
+        "FPR_gap": 0.0064
+      },
+      {
+        "alpha": 0.2,
+        "cost_per_1000": 373.1667,
+        "min_DIR": 0.9933,
+        "approval_rate": 0.8703,
+        "TPR_gap": 0.016,
+        "FPR_gap": 0.005
+      },
+      {
+        "alpha": 0.25,
+        "cost_per_1000": 373.1667,
+        "min_DIR": 0.9933,
+        "approval_rate": 0.8703,
+        "TPR_gap": 0.016,
+        "FPR_gap": 0.005
+      },
+      {
+        "alpha": 0.3,
+        "cost_per_1000": 373.0,
+        "min_DIR": 0.9952,
+        "approval_rate": 0.8705,
+        "TPR_gap": 0.016,
+        "FPR_gap": 0.0031
+      },
+      {
+        "alpha": 0.35,
+        "cost_per_1000": 373.5,
+        "min_DIR": 0.9958,
+        "approval_rate": 0.871,
+        "TPR_gap": 0.0137,
+        "FPR_gap": 0.0027
+      },
+      {
+        "alpha": 0.4,
+        "cost_per_1000": 373.5,
+        "min_DIR": 0.9958,
+        "approval_rate": 0.871,
+        "TPR_gap": 0.0137,
+        "FPR_gap": 0.0027
+      },
+      {
+        "alpha": 0.45,
+        "cost_per_1000": 373.1667,
+        "min_DIR": 0.9963,
+        "approval_rate": 0.8713,
+        "TPR_gap": 0.0137,
+        "FPR_gap": 0.0023
+      },
+      {
+        "alpha": 0.5,
+        "cost_per_1000": 373.1667,
+        "min_DIR": 0.998,
+        "approval_rate": 0.8713,
+        "TPR_gap": 0.0045,
+        "FPR_gap": 0.0023
+      },
+      {
+        "alpha": 0.55,
+        "cost_per_1000": 373.0,
+        "min_DIR": 1.0,
+        "approval_rate": 0.8715,
+        "TPR_gap": 0.0045,
+        "FPR_gap": 0.0004
+      },
+      {
+        "alpha": 0.6,
+        "cost_per_1000": 373.3333,
+        "min_DIR": 0.9953,
+        "approval_rate": 0.8712,
+        "TPR_gap": 0.0226,
+        "FPR_gap": 0.0025
+      },
+      {
+        "alpha": 0.65,
+        "cost_per_1000": 374.3333,
+        "min_DIR": 0.9935,
+        "approval_rate": 0.8712,
+        "TPR_gap": 0.0249,
+        "FPR_gap": 0.0039
+      },
+      {
+        "alpha": 0.7,
+        "cost_per_1000": 375.3333,
+        "min_DIR": 0.9918,
+        "approval_rate": 0.8712,
+        "TPR_gap": 0.0272,
+        "FPR_gap": 0.0054
+      },
+      {
+        "alpha": 0.75,
+        "cost_per_1000": 375.1667,
+        "min_DIR": 0.9916,
+        "approval_rate": 0.8713,
+        "TPR_gap": 0.0272,
+        "FPR_gap": 0.0056
+      },
+      {
+        "alpha": 0.8,
+        "cost_per_1000": 374.6667,
+        "min_DIR": 0.987,
+        "approval_rate": 0.8708,
+        "TPR_gap": 0.0431,
+        "FPR_gap": 0.0085
+      },
+      {
+        "alpha": 0.85,
+        "cost_per_1000": 374.5,
+        "min_DIR": 0.9851,
+        "approval_rate": 0.871,
+        "TPR_gap": 0.0431,
+        "FPR_gap": 0.0103
+      },
+      {
+        "alpha": 0.9,
+        "cost_per_1000": 374.3333,
+        "min_DIR": 0.9848,
+        "approval_rate": 0.8712,
+        "TPR_gap": 0.0431,
+        "FPR_gap": 0.0105
+      },
+      {
+        "alpha": 0.95,
+        "cost_per_1000": 374.1667,
+        "min_DIR": 0.9846,
+        "approval_rate": 0.8713,
+        "TPR_gap": 0.0431,
+        "FPR_gap": 0.0107
+      },
+      {
+        "alpha": 1.0,
+        "cost_per_1000": 375.1667,
+        "min_DIR": 0.9812,
+        "approval_rate": 0.8713,
+        "TPR_gap": 0.0453,
+        "FPR_gap": 0.0138
+      }
+    ],
+    "HOUSING_GROUP": [
+      {
+        "alpha": 0.0,
+        "cost_per_1000": 373.6667,
+        "min_DIR": 0.9972,
+        "approval_rate": 0.8708,
+        "TPR_gap": 0.0258,
+        "FPR_gap": 0.008
+      },
+      {
+        "alpha": 0.05,
+        "cost_per_1000": 373.6667,
+        "min_DIR": 0.9972,
+        "approval_rate": 0.8708,
+        "TPR_gap": 0.0258,
+        "FPR_gap": 0.008
+      },
+      {
+        "alpha": 0.1,
+        "cost_per_1000": 372.6667,
+        "min_DIR": 0.9955,
+        "approval_rate": 0.8708,
+        "TPR_gap": 0.0235,
+        "FPR_gap": 0.0095
+      },
+      {
+        "alpha": 0.15,
+        "cost_per_1000": 372.5,
+        "min_DIR": 0.9921,
+        "approval_rate": 0.871,
+        "TPR_gap": 0.0235,
+        "FPR_gap": 0.0128
+      },
+      {
+        "alpha": 0.2,
+        "cost_per_1000": 372.5,
+        "min_DIR": 0.9921,
+        "approval_rate": 0.871,
+        "TPR_gap": 0.0235,
+        "FPR_gap": 0.0128
+      },
+      {
+        "alpha": 0.25,
+        "cost_per_1000": 373.0,
+        "min_DIR": 0.9858,
+        "approval_rate": 0.8715,
+        "TPR_gap": 0.0088,
+        "FPR_gap": 0.0175
+      },
+      {
+        "alpha": 0.3,
+        "cost_per_1000": 373.6667,
+        "min_DIR": 0.981,
+        "approval_rate": 0.8718,
+        "TPR_gap": 0.0059,
+        "FPR_gap": 0.0207
+      },
+      {
+        "alpha": 0.35,
+        "cost_per_1000": 374.5,
+        "min_DIR": 0.9795,
+        "approval_rate": 0.872,
+        "TPR_gap": 0.0206,
+        "FPR_gap": 0.0207
+      },
+      {
+        "alpha": 0.4,
+        "cost_per_1000": 374.6667,
+        "min_DIR": 0.9793,
+        "approval_rate": 0.8718,
+        "TPR_gap": 0.0206,
+        "FPR_gap": 0.0209
+      },
+      {
+        "alpha": 0.45,
+        "cost_per_1000": 374.6667,
+        "min_DIR": 0.9776,
+        "approval_rate": 0.8718,
+        "TPR_gap": 0.0206,
+        "FPR_gap": 0.0226
+      },
+      {
+        "alpha": 0.5,
+        "cost_per_1000": 374.3333,
+        "min_DIR": 0.9729,
+        "approval_rate": 0.8722,
+        "TPR_gap": 0.0206,
+        "FPR_gap": 0.0273
+      },
+      {
+        "alpha": 0.55,
+        "cost_per_1000": 374.8333,
+        "min_DIR": 0.9722,
+        "approval_rate": 0.8717,
+        "TPR_gap": 0.0206,
+        "FPR_gap": 0.028
+      },
+      {
+        "alpha": 0.6,
+        "cost_per_1000": 374.6667,
+        "min_DIR": 0.9708,
+        "approval_rate": 0.8718,
+        "TPR_gap": 0.0206,
+        "FPR_gap": 0.0295
+      },
+      {
+        "alpha": 0.65,
+        "cost_per_1000": 374.6667,
+        "min_DIR": 0.9708,
+        "approval_rate": 0.8718,
+        "TPR_gap": 0.0206,
+        "FPR_gap": 0.0295
+      },
+      {
+        "alpha": 0.7,
+        "cost_per_1000": 373.8333,
+        "min_DIR": 0.9705,
+        "approval_rate": 0.8717,
+        "TPR_gap": 0.0229,
+        "FPR_gap": 0.0295
+      },
+      {
+        "alpha": 0.75,
+        "cost_per_1000": 374.3333,
+        "min_DIR": 0.9699,
+        "approval_rate": 0.8712,
+        "TPR_gap": 0.0229,
+        "FPR_gap": 0.0301
+      },
+      {
+        "alpha": 0.8,
+        "cost_per_1000": 375.1667,
+        "min_DIR": 0.9684,
+        "approval_rate": 0.8713,
+        "TPR_gap": 0.0376,
+        "FPR_gap": 0.0301
+      },
+      {
+        "alpha": 0.85,
+        "cost_per_1000": 375.1667,
+        "min_DIR": 0.9651,
+        "approval_rate": 0.8713,
+        "TPR_gap": 0.0376,
+        "FPR_gap": 0.0335
+      },
+      {
+        "alpha": 0.9,
+        "cost_per_1000": 375.1667,
+        "min_DIR": 0.9634,
+        "approval_rate": 0.8713,
+        "TPR_gap": 0.0376,
+        "FPR_gap": 0.0352
+      },
+      {
+        "alpha": 0.95,
+        "cost_per_1000": 376.3333,
+        "min_DIR": 0.9615,
+        "approval_rate": 0.8712,
+        "TPR_gap": 0.0523,
+        "FPR_gap": 0.0356
+      },
+      {
+        "alpha": 1.0,
+        "cost_per_1000": 375.6667,
+        "min_DIR": 0.9611,
+        "approval_rate": 0.8708,
+        "TPR_gap": 0.0546,
+        "FPR_gap": 0.0359
+      }
+    ]
+  },
+  "deployment_model": "M3_reweighed",
+  "partC_shap_top15": {
+    "M0_baseline": {
+      "EXT_SOURCE_MEAN": 0.23684,
+      "EXT_SOURCE_2": 0.14395,
+      "CREDIT_INCOME_PCT": 0.06609,
+      "EXT_SOURCE_3": 0.05978,
+      "CODE_GENDER": 0.05806,
+      "ANNUITY_INCOME_PCT": 0.04217,
+      "EXT_SOURCE_1": 0.04141,
+      "AMT_REQ_CREDIT_BUREAU_YEAR": 0.02376,
+      "REGION_RATING_CLIENT": 0.02001,
+      "GOODS_CREDIT_PCT": 0.01871,
+      "BUREAU_DEBT_RATIO": 0.01841,
+      "AGE_YEARS": 0.01828,
+      "BUREAU_DAYS_CREDIT_MEAN": 0.0177,
+      "DAYS_BIRTH": 0.01652,
+      "DAYS_EMPLOYED_PCT": 0.01616
+    },
+    "M3_reweighed": {
+      "EXT_SOURCE_MEAN": 0.19648,
+      "EXT_SOURCE_2": 0.05709,
+      "CREDIT_INCOME_PCT": 0.04945,
+      "EXT_SOURCE_3": 0.0384,
+      "ANNUITY_INCOME_PCT": 0.01376,
+      "OCCUPATION_TYPE": 0.01367,
+      "EXT_SOURCE_1": 0.01256,
+      "GOODS_CREDIT_PCT": 0.01238,
+      "BUREAU_DEBT_RATIO": 0.01099,
+      "DAYS_REGISTRATION": 0.01086,
+      "AMT_REQ_CREDIT_BUREAU_YEAR": 0.00994,
+      "BUREAU_DAYS_CREDIT_MEAN": 0.00951,
+      "AMT_INCOME_TOTAL": 0.00888,
+      "REGION_POPULATION_RELATIVE": 0.00865,
+      "BUREAU_DEBT_SUM": 0.00812
+    }
+  },
+  "partC_sensitive_shap_share": 0.1705879143495683,
+  "partC_sensitive_shap_by_group": [
+    {
+      "attribute": "GENDER",
+      "group": "Female",
+      "n": 3242,
+      "mean_net_SHAP_sensitive_and_proxy_features": -0.04586
+    },
+    {
+      "attribute": "GENDER",
+      "group": "Male",
+      "n": 1758,
+      "mean_net_SHAP_sensitive_and_proxy_features": 0.08864
+    },
+    {
+      "attribute": "AGE_GROUP",
+      "group": "30-44",
+      "n": 2136,
+      "mean_net_SHAP_sensitive_and_proxy_features": 0.02707
+    },
+    {
+      "attribute": "AGE_GROUP",
+      "group": "45-59",
+      "n": 1740,
+      "mean_net_SHAP_sensitive_and_proxy_features": -0.02313
+    },
+    {
+      "attribute": "AGE_GROUP",
+      "group": "60+",
+      "n": 400,
+      "mean_net_SHAP_sensitive_and_proxy_features": -0.09052
+    },
+    {
+      "attribute": "AGE_GROUP",
+      "group": "<30",
+      "n": 724,
+      "mean_net_SHAP_sensitive_and_proxy_features": 0.03561
+    },
+    {
+      "attribute": "REGION_TIER",
+      "group": "Region 1 (best)",
+      "n": 596,
+      "mean_net_SHAP_sensitive_and_proxy_features": -0.0399
+    },
+    {
+      "attribute": "REGION_TIER",
+      "group": "Region 2",
+      "n": 3691,
+      "mean_net_SHAP_sensitive_and_proxy_features": -0.01082
+    },
+    {
+      "attribute": "REGION_TIER",
+      "group": "Region 3 (worst)",
+      "n": 713,
+      "mean_net_SHAP_sensitive_and_proxy_features": 0.09943
+    },
+    {
+      "attribute": "INCOME_CATEGORY",
+      "group": "Non-traditional",
+      "n": 628,
+      "mean_net_SHAP_sensitive_and_proxy_features": -0.04979
+    },
+    {
+      "attribute": "INCOME_CATEGORY",
+      "group": "Traditional (salaried/business)",
+      "n": 4372,
+      "mean_net_SHAP_sensitive_and_proxy_features": 0.00879
+    },
+    {
+      "attribute": "HOUSING_GROUP",
+      "group": "Own / standard housing",
+      "n": 4396,
+      "mean_net_SHAP_sensitive_and_proxy_features": -0.00114
+    },
+    {
+      "attribute": "HOUSING_GROUP",
+      "group": "Renting / parents / municipal / office",
+      "n": 604,
+      "mean_net_SHAP_sensitive_and_proxy_features": 0.02016
+    }
+  ],
+  "partC_counterfactual_summary": {
+    "rejected_profiles_tested": 150.0,
+    "flippable_with_any_lever_combination": 0.6533333333333333,
+    "flippable_by_loan_cut_alone": 0.5533333333333333,
+    "median_loan_cut_alone_(feasible)": 0.4,
+    "median_loan_cut_in_best_combo": 0.25,
+    "share_needing_term_extension": 0.2857142857142857,
+    "share_needing_utilisation_paydown": 0.14285714285714285,
+    "median_effort": 0.4
+  },
+  "partC_recourse_by_group": [
+    {
+      "level_0": "GENDER",
+      "level_1": "Female",
+      "n": 103,
+      "feasible_rate": 0.6311,
+      "median_loan_cut": 0.35,
+      "median_effort": 0.4
+    },
+    {
+      "level_0": "GENDER",
+      "level_1": "Male",
+      "n": 47,
+      "feasible_rate": 0.7021,
+      "median_loan_cut": 0.2,
+      "median_effort": 0.3
+    },
+    {
+      "level_0": "REGION_TIER",
+      "level_1": "Region 1 (best)",
+      "n": 26,
+      "feasible_rate": 0.5769,
+      "median_loan_cut": 0.25,
+      "median_effort": 0.4
+    },
+    {
+      "level_0": "REGION_TIER",
+      "level_1": "Region 2",
+      "n": 100,
+      "feasible_rate": 0.67,
+      "median_loan_cut": 0.25,
+      "median_effort": 0.35
+    },
+    {
+      "level_0": "REGION_TIER",
+      "level_1": "Region 3 (worst)",
+      "n": 24,
+      "feasible_rate": 0.6667,
+      "median_loan_cut": 0.3,
+      "median_effort": 0.475
+    },
+    {
+      "level_0": "AGE_GROUP",
+      "level_1": "30-44",
+      "n": 68,
+      "feasible_rate": 0.6324,
+      "median_loan_cut": 0.2,
+      "median_effort": 0.3
+    },
+    {
+      "level_0": "AGE_GROUP",
+      "level_1": "45-59",
+      "n": 54,
+      "feasible_rate": 0.6667,
+      "median_loan_cut": 0.375,
+      "median_effort": 0.5
+    },
+    {
+      "level_0": "AGE_GROUP",
+      "level_1": "60+",
+      "n": 10,
+      "feasible_rate": 0.6,
+      "median_loan_cut": 0.6,
+      "median_effort": 0.85
+    },
+    {
+      "level_0": "AGE_GROUP",
+      "level_1": "<30",
+      "n": 18,
+      "feasible_rate": 0.7222,
+      "median_loan_cut": 0.15,
+      "median_effort": 0.3
+    },
+    {
+      "level_0": "INCOME_CATEGORY",
+      "level_1": "Non-traditional",
+      "n": 25,
+      "feasible_rate": 0.6,
+      "median_loan_cut": 0.2,
+      "median_effort": 0.35
+    },
+    {
+      "level_0": "INCOME_CATEGORY",
+      "level_1": "Traditional (salaried/business)",
+      "n": 125,
+      "feasible_rate": 0.664,
+      "median_loan_cut": 0.3,
+      "median_effort": 0.4
+    }
+  ],
+  "partC_notice_log": {
+    "position": 2755,
+    "pd": 0.14082313212419123,
+    "threshold": 0.1374254242385011,
+    "top_reason_features": [
+      "EXT_SOURCE_MEAN",
+      "INCOME_PER_PERSON",
+      "DAYS_EMPLOYED"
+    ],
+    "forbidden_in_top5_drivers": []
+  },
+  "final_variant_summary": [
+    {
+      "variant": "M0_baseline",
+      "attrs_failing_80": 0,
+      "worst_min_DIR": 0.8880654551176146
+    },
+    {
+      "variant": "M1_unaware",
+      "attrs_failing_80": 0,
+      "worst_min_DIR": 0.9198873095146626
+    },
+    {
+      "variant": "M2_no_proxies",
+      "attrs_failing_80": 0,
+      "worst_min_DIR": 0.9745449006017213
+    },
+    {
+      "variant": "M3_reweighed",
+      "attrs_failing_80": 0,
+      "worst_min_DIR": 0.9854754763938635
+    }
+  ],
+  "config": {
+    "FN_COST": 5.0,
+    "FP_COST": 1.0,
+    "MIN_GROUP_N": 100,
+    "main_model": "LGBM_plain",
+    "threshold_M0": 0.14021376430953808,
+    "deployment_threshold": 0.1374254242385011,
+    "split": "60/20/20 stratified",
+    "seed": 42,
+    "n_test": 6000
+  }
+}
